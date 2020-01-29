@@ -39,10 +39,12 @@ yarn_install(
     name = "npm_common-assets",
     package_json = "//common-assets:package.json",
     yarn_lock = "//common-assets:yarn.lock",
+    symlink_node_modules = False,
 )
 
 yarn_install(
     name = "npm_root",
     package_json = "//:package.json",
     yarn_lock = "//:yarn.lock",
+    symlink_node_modules = False,
 )
